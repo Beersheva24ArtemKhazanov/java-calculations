@@ -25,14 +25,18 @@ public class Calculations {
         return res;
     }
 
-    public static int maxDigit(int num1, int num2) {
+    public static int maxDigit(int number) {
         // TODO
-        if (num1 > num2) {
-            return num1;
-        } else if (num2 > num1) {
-            return num2;
-        } else
-        return -1;
+        if (number == 0) {
+            return 0; // Special case for zero
+          }
+          int maxDigit = 0;
+          while (number > 0) {
+            int digit = number % 10;
+            maxDigit = Math.max(maxDigit, digit);
+            number /= 10;
+          }
+          return maxDigit;
     }
 
     public static boolean isDividedOn(int number, int divider) {

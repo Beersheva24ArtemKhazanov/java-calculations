@@ -12,7 +12,7 @@ public class CalculationTest {
         assertEquals(9, multiply(3, 3));
         assertEquals(2, divide(10, 5));
         assertEquals(16, sumOfDigits(8));
-        assertEquals(18, maxDigit(18, 15));
+        assertEquals(6, maxDigit(1235156));
         assertEquals(true, isDividedOn(18, 6));
     }
 }
